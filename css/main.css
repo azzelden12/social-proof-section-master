@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 15px;
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 1.5rem;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right 67vw bottom 57vh, left 60vw top -21vh;
+}
+main {
+    width: 1020px;
+    margin-bottom: 2rem;
+
+}
+.container {
+    max-width: 100%;
+
+}
+.container .head-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.container .head-1 .title {
+width: 225px;
+font-weight: 700;
+color: var(--Very-Dark-Magenta);
+margin-bottom: 2rem;
+font-size: 35px;
+}
+.container .head-1 .p-1 {
+    color: var(--Dark-Grayish-Magenta);
+    width: 350px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.container .rate-1 {
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Light-Grayish-Magenta);
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: .5rem;
+}
+.container .rate-1 .p-2 {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+.container .head-1 .rate {
+    width: 400px;
+    align-content: flex-end;
+    margin-top: 35px;
+}
+#rate-1-2 {
+margin-left: -100px;
+}
+#rate-1-1 {
+    margin-left: -45px;
+}
+.container .avatar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.container .avatar .smith,
+.container .avatar .Robert,
+.container .avatar .Anne {
+    background-color:var(--Very-Dark-Magenta);
+    padding: 30px 20px;
+    border-radius: .5rem;
+    height: fit-content;
+}
+.container .avatar img {
+    border-radius: 50%;
+    width: 50px;
+    margin-left: -23px;
+}
+.container .avatar .smith .smith-1,
+.container .avatar .Robert .Robert-1,
+.container .avatar .Anne .Anne-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+.container .avatar .name .title {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: white;
+}
+.container .avatar .name .p-3 {
+    color: var(--Soft-Pink);
+}
+.container .avatar .p-4 {
+    color:var(--Light-Grayish-Magenta);
+    line-height: 1.5;
+    width: 260px;
+
+}
+.container .avatar .Robert{
+margin-top: 30px;
+}
+.container .avatar .Anne {
+margin-top: 60px;
+}
+@media (max-width:425px){
+    main {
+        width: 300px;
+
+    }
+    .container {
+        max-width: 100%;
+    }
+    .container .head-1 {
+        flex-direction: column;
+    }
+    .container .avatar {
+        grid-template-columns: 1fr;
+    }
+    body {
+        overflow: visible;
+        background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top 0 left 0,right 0 bottom 85px;
+    }
+    .container .head-1 .title {
+        width: fit-content;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 1rem;
+
+    }
+    .container .head-1 .p-1 {
+        width: fit-content;
+        text-align: center;
+    }
+    #rate-1-2,
+    #rate-1-1 {
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .container .rate {
+            max-width: 100%;
+        }
+        .container .rate-1 {
+            max-width: 100%;
+            flex-direction: column;
+        }
+        .container .rate-1 .star {
+            margin-bottom: 10px;
+        }
+        .container .avatar .smith,
+        .container .avatar .Robert,
+        .container .avatar .Anne {
+            
+            margin-top: 20px;
+        }
+}
